@@ -3,4 +3,5 @@ export {
     incrementAsync,
     decrement,
     decrementAsync,
+    setAsync,
 } from './counter';

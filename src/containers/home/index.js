@@ -6,14 +6,18 @@ import {
   increment,
   incrementAsync,
   decrement,
-  decrementAsync
+  decrementAsync,
+  setAsync,
 } from '../../store/actions';
 import Button from '../../components/Button';
 
 const Home = props => (
   <div>
     <h1>Home</h1>
-    <p>Count: {props.count}</p>
+    <p>
+      Count: {props.count}<br />
+      async period: <input onChange={props.setAsync} type="number" placeholder="3000" value={props.asyncPeriod} /> MS
+    </p>
 
     <p>
       <Button primary onClick={props.increment} disabled={props.isIncrementing}>Increment</Button>
@@ -29,17 +33,14 @@ const Home = props => (
   </div>
 )
 
-const mapStateToProps = state => ({
-  count: state.counter.count,
-  isIncrementing: state.counter.isIncrementing,
-  isDecrementing: state.counter.isDecrementing
-})
+const mapStateToProps = state => state.counter;
 
 const mapDispatchToProps = dispatch => bindActionCreators({
   increment,
   incrementAsync,
   decrement,
   decrementAsync,
+  setAsync,
   changePage: () => push('/about-us')
 }, dispatch)
 
