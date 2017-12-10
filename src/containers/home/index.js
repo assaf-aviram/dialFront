@@ -7,7 +7,7 @@ import {
   incrementAsync,
   decrement,
   decrementAsync
-} from '../../modules/counter'
+} from '../../store/actions';
 import Button from '../../components/Button';
 
 const Home = props => (
