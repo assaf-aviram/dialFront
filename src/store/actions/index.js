@@ -5,3 +5,8 @@ export {
     decrementAsync,
     setAsync,
 } from './counter';
+
+export {
+    searchAddress,
+    selectResult,
+} from './geo';
