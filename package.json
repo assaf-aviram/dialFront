@@ -15,10 +15,13 @@
   "dependencies": {
     "downshift": "^1.22.3",
     "lodash": "^4.17.4",
+    "numeral": "^2.0.6",
     "query-string": "^5.0.1",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-player": "^0.25.3",
+    "react-rangeslider": "^2.2.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
